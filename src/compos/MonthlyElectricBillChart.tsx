@@ -42,7 +42,7 @@ const MonthlyElectricBillChart = () => {
   }, []);
 
   return (
-    <div style={{ width: "50%", height: "auto" }}>
+    <div style={{ width: "30%", height: "auto" }}>
       <canvas ref={chartContainer}></canvas>
     </div>
   );
