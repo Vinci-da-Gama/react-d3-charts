@@ -21,7 +21,11 @@ const HourlyElectricPriceChart = () => {
 
     const svg = d3
       .select(chartContainer.current)
-      .append("svg")
+      .selectAll("svg")
+      .remove() // remove previous chart, it will prevent render d3 bar chart twice; otherwise use method to render d3 chart.
+      .exit()
+      .data([null])
+      .join("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")

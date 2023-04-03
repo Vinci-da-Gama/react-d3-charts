@@ -41,7 +41,11 @@ const MonthlyElectricBillChart = () => {
     }
   }, []);
 
-  return <canvas ref={chartContainer}></canvas>;
+  return (
+    <div style={{ width: "50%", height: "auto" }}>
+      <canvas ref={chartContainer}></canvas>
+    </div>
+  );
 };
 
 export default MonthlyElectricBillChart;
