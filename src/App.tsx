@@ -1,5 +1,14 @@
+import HourlyElectricPriceChart from "./compos/HourlyElectricPriceChart";
+import MonthlyElectricBillChart from "./compos/MonthlyElectricBillChart";
+
 const App = () => {
-  return <div>Hello world...</div>;
+  return (
+    <div>
+      <MonthlyElectricBillChart />
+      <hr />
+      <HourlyElectricPriceChart />
+    </div>
+  );
 };
 
 export default App;
